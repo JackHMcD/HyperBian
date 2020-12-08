@@ -29,7 +29,7 @@ jobs:
       - name: publish image
         uses: actions/upload-artifact@v2
         with:
-          name: image
-          path: "*-*-*-HyperBian-lite.img"
+          name: zip
+          path: "pi-gen/deploy/HyperBian.zip"
 
 
