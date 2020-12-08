@@ -26,4 +26,10 @@ jobs:
           sudo ./build.sh
           sudo mv ./deploy/*.zip ./deploy/HyperBian.zip
           sudo chown -fR $(stat -c "%U:%G" .) ./deploy
+      - name: publish image
+        uses: actions/upload-artifact@v2
+        with:
+          name: image
+          path: "Hyperbian-*.img"
+
 
