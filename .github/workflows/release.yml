@@ -1,8 +1,6 @@
 name: HyperBian release
 
-on:
-  repository_dispatch:
-    types: [hyperion_push]
+on: [push, pull_request]
 
 jobs:
   rpi-image:
